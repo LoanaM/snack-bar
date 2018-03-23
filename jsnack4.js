@@ -1,7 +1,7 @@
 //for version
 somma = 0
 for (var i = 0; i < 5; i++) {
-  num = parseInt(prompt("Ins numero"));
+  num = parseInt(prompt("Inserisci un numero"));
   somma+=num
 }
 console.log (somma)
@@ -11,7 +11,7 @@ console.log (somma)
 total = 0
 var i = 0
 do {
-  number = parseInt(prompt("Ins numero"));
+  number = parseInt(prompt("Inserisci un numero"));
   total+=number
   i++
 } while (i<5)
