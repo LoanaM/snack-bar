@@ -1,3 +1,7 @@
+// L’utente inserisce due numeri in successione, con due prompt.
+// Il software stampa il maggiore
+
+
 var numeri = []
 
 for (var i = 0; i < 2; i++) {
