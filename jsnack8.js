@@ -1,21 +1,26 @@
-var nomi =  ["Barbara", "Simone", "Loana", "Sabrina", "Monica", "Alessio", "Massimo"];
-var cognomi = ["Michelis", "Satta", "Borgia", "Mantovani", "DeLuca", "Bianchi"];
+var nomi =  ["Barbara", "Simone", "Loana", "Sabrina", "Monica", "Alessio", "Massimo", "Donato", "Morgana", "Ambra", "Alba"];
+var cognomi = ["Michelis", "Satta", "Borgia", "Mantovani", "DeLuca", "Bianchi", "Parietti", "Gentileschi", "Giotto", "DaVinci"];
 
-var invited1 = {
-  "color" : "red",
-}
+var fakeinvited = [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+]
 
-invited1.Nome="Morgana";
-console.log (invited1)
 
 
-var fakeinvited = [];
-
-for (var i = 0; i < 5; i++) {
-  var u = Math.floor(Math.random() * 7);
-  fakeinvited.push(nomi[u])
-  var z = Math.floor(Math.random() * 6);
-  fakeinvited.push(cognomi[z])
+for (var i = 0; i < 10; i++) {
+  var u = Math.floor(Math.random() * 11);
+  fakeinvited[i].push(nomi[u])
+  var z = Math.floor(Math.random() * 10);
+  fakeinvited[i].push(cognomi[z])
 }
 
 console.log (fakeinvited)
