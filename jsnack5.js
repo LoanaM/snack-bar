@@ -1,14 +1,37 @@
-var player1 = prompt("Fai una giocata:");
-var player2 = prompt("Fai una giocata:");
+
 var punteggio1 = 0;
 var punteggio2 = 0;
 
-
-if ((player1=="forbici") && (player2=="sasso")) {
-  alert ("Giocatore 2 ha vinto")
+//creo la manche
+for (var i = 0; i < 3; i++) {
+    player1 = prompt("Fai una giocata (giocatore1):");
+    player2 = prompt("Fai una giocata (giocatore2):");
+    if ((player1=="forbici") && (player2=="sasso")) {
+      punteggio2++
+    }
+    else if ((player1=="sasso") && (player2=="forbici")) {
+      punteggio1++
+    }
+    else if ((player1=="carta") && (player2=="forbici")) {
+      punteggio2++
+    }
+    else if ((player1=="forbici") && (player2=="carta")) {
+      punteggio1++
+    }
+    else if ((player1=="sasso") && (player2=="carta")) {
+      punteggio2++
+    }
+    else if ((player1=="carta") && (player2=="sasso")) {
+      punteggio1++
+    }
 }
-else if ((player1=="sasso") && (player2=="forbici")) {
+
+//decreto il punteggio finale
+if (punteggio1 > punteggio2) {
   alert ("Giocatore 1 ha vinto")
+}
+else if (punteggio1 < punteggio2) {
+  alert ("Giocatore 2 ha vinto")
 }
 else {
   alert ("Pareggio!")
