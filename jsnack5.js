@@ -1,3 +1,4 @@
+// Crea il gioco carta sasso e forbice: una manche è formata da 3 giocate. In ogni giocata il computer chiede all’utente di scegliere tra carta, sasso e forbice. Al termine della manche, il computer deve comunicare il punteggio.
 
 var punteggio1 = 0;
 var punteggio2 = 0;

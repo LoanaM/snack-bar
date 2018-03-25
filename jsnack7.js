@@ -1,3 +1,5 @@
+// Gatsby vuole sapere la composizione dei suoi invitati. Prendendo il suo array di invitati, in cui ogni elemento un “nome cognome”, vuole sapere la percentuale di invitati uomini e invitati donne. Per aiutarsi, si è creato due array di appoggio con nomi tipicamente da uomo e da donna.
+
 var invited1 = {
   "Nome" : "Gino",
   "Cognome" : "Rossi",

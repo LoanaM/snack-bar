@@ -14,8 +14,6 @@ var fakeinvited = [
   [],
 ]
 
-
-
 for (var i = 0; i < 10; i++) {
   var u = Math.floor(Math.random() * 11);
   fakeinvited[i].push(nomi[u])
@@ -24,3 +22,4 @@ for (var i = 0; i < 10; i++) {
 }
 
 console.log (fakeinvited)
+document.write (fakeinvited)
