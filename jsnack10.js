@@ -32,13 +32,11 @@ for (var a = 0; a < arrayGroup.length; a++) {
 console.log (somme)
 
 //calcolo la somma più grande
-maggiore = somme[0];
-arraystamp = arrayGroup[0];
+var massimo = arrayGroup[0];
 
-for(var i=0; i<somme.length; i++) {
-      if(somme[i]>maggiore) {
-        maggiore=somme[i];
-        arraystamp=arrayGroup[i]
-      }
-}
-console.log (arraystamp)
+// for(var i=0; i<somme.length; i++) {
+//       if(somme[i]>maggiore ) {
+//         maggiore=somme[i];
+//       }
+// }
+console.log (massimo)
