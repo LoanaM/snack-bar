@@ -1,3 +1,5 @@
+// Generatore di “nomi cognomi” casuali, prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di invitati
+
 var nomi =  ["Barbara", "Simone", "Loana", "Sabrina", "Monica", "Alessio", "Massimo", "Donato", "Morgana", "Ambra", "Alba"];
 var cognomi = ["Michelis", "Satta", "Borgia", "Mantovani", "DeLuca", "Bianchi", "Parietti", "Gentileschi", "Giotto", "DaVinci"];
 
