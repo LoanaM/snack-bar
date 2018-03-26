@@ -10,7 +10,7 @@ somme = [];
 
 //creo nuovi n array
 for (var i = 0; i < n; i++) {
-  arrayGroup.push("array" + (i));
+  arrayGroup.push("array");
   arrayGroup[i] = [];
 }
 
