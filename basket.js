@@ -18,9 +18,9 @@
 
 var arraygiocatori = []
 
-for (var k = 0; k < 100; k++) {
+for (var k = 0; k < 5; k++) {
       var giocatori = []
-      //creo il codice univoco
+      //creo il codice univoco alfanumerico
       var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
       var unicode = []
       for (var i = 0; i < 3; i++) {
@@ -49,10 +49,28 @@ for (var k = 0; k < 100; k++) {
       arraygiocatori.push(giocatori)
 }
 
-var utente = prompt("Inserisci il codice")
+var goon = parseInt(prompt("Cosa vuoi fare?"));
 
-for (var i = 0; i < arraygiocatori.length; i++) {
-  if (utente==arraygiocatori[i].code) {
-  console.log(arraygiocatori[i])
+if (goon==0) {
+    alert("Buona giornata. Arrivederci!")
+}
+else if (goon==1) {
+    var utente = prompt("Inserisci il codice")
+    for (var i = 0; i < arraygiocatori.length; i++) {
+      if (utente==arraygiocatori[i].code) {
+      console.log(arraygiocatori[i])
+      }
+    }
+}
+else {
+   var statistica = prompt("Inserire statistica desiderata:")
+   console.log(media(arraygiocatori,statistica))
+}
+
+function media(array,stat) {
+  var somma = 0;
+  for ( var i=0; i<array.length; i++ ) {
+    somma = array[i][stat] + somma
   }
+  return somma / array.length
 }
