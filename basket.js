@@ -18,7 +18,7 @@
 
 var arraygiocatori = []
 
-for (var k = 0; k < 5; k++) {
+for (var k = 0; k < 100; k++) {
       var giocatori = []
       //creo il codice univoco alfanumerico
       var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
