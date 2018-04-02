@@ -12,7 +12,7 @@
 
 var arraygiocatori = []
 
-for (var k = 0; k < 5; k++) {
+for (var k = 0; k < 100; k++) {
       var giocatori = []
       //creo il codice univoco alfanumerico
       var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -35,6 +35,7 @@ for (var k = 0; k < 5; k++) {
       giocatori.rimbalzi = rimbalzo
       fallo = Math.floor(Math.random() * 6);
       giocatori.falli = fallo
+      giocatori.foto = chooseimg();
       successo2 = (Math.floor(Math.random() * 101)) + "%"
       giocatori.success2pt = successo2
       successo3 = (Math.floor(Math.random() * 101)) + "%"
@@ -54,5 +55,13 @@ for (var k = 0; k < 5; k++) {
       document.getElementById('falli').innerHTML = arraygiocatori[i].falli
       document.getElementById('tiri2').innerHTML = arraygiocatori[i].success2pt
       document.getElementById('tiri3').innerHTML = arraygiocatori[i].success3pt
+      document.getElementById('foto').className = arraygiocatori[i].foto
       }
     }
+
+
+function chooseimg () {
+    var fotoarray = ["bck-img1","bck-img2","bck-img3","bck-img4","bck-img5","bck-img6","bck-img7","bck-img8"];
+    var k = Math.floor(Math.random() * 8)
+    return fotoarray[k]
+}
