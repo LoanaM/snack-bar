@@ -1,0 +1,9 @@
+li {
+  font-family: 'Sofia';font-size: 22px;
+  list-style: none;
+}
+
+.colored {
+  border-bottom: 1px solid black;
+  background-color: yellow;
+}
